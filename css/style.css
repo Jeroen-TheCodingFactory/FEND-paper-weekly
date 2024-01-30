@@ -8,8 +8,46 @@ body{
    font-family: "Lato", sans-serif;
 }
 
+a,a:active, a:visited{
+    color:white;
+    text-decoration: none;
+}
 
+.mobile-nav{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index: 2;
+    background:radial-gradient(circle at center,rgb(255, 255, 255,0.2) 10% ,transparent 20%) black;
+    background-size: 30px 30px;
+    background-repeat: repeat;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+    display:none;
+    animation-name: appear;
+    animation-duration:0.8s;
+}
 
+.mobile-nav__list{
+    list-style:none;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    backface-visibility: hidden;
+}
+
+.mobile-nav__item{
+    font-size:400%;
+    transition:0.4s all;
+}
+
+.mobile-nav__item:hover{
+    transform: scale(1.2);
+    cursor:pointer;
+
+}
 .header{
     height:100vh;
     color:white;
@@ -342,5 +380,18 @@ body{
     .enkele-collectie:hover img{
         transform: scale(1);
     }
+    .mobile-nav__item{
+        font-size:200%;
+    }
+}
 
+@keyframes appear {
+    from{
+        opacity:0;
+        filter:blur(20px);
+    }
+    to{
+        opacity:1;
+        filter:blur(0)
+    }
 }

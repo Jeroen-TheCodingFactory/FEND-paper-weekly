@@ -10,18 +10,28 @@
     <script src="https://kit.fontawesome.com/f35c5d82fb.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js" defer></script>
 </head>
 
 <body>
+    <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav__list">
+        <li class="mobile-nav__item logo"><a href="">Paper Weekly</a></li>
+        <li class="mobile-nav__item logo"><a href="">Men</a></li>
+        <li class="mobile-nav__item logo"><a href="">Women</a></li>
+        <li class="mobile-nav__item logo"><a href="">Accessories</a></li>
+        <li class="mobile-nav__item logo"><a href="">Collections</a></li>
+    </ul>
+    </nav>
     <header class="header">
         <nav class="primary-nav">
             <div class="first-wrapper">
                 <h1 class="logo">Paper Weekly</h1>
                 <ul class="ul-nav">
-                    <li class="li-nav">Men</li>
-                    <li class="li-nav">Women</li>
-                    <li class="li-nav">Accessories</li>
-                    <li class="li-nav">Collections</li>
+                    <li class="li-nav"><a href="">Men</a></li>
+                    <li class="li-nav"><a href="">Women</a></li>
+                    <li class="li-nav"><a href="">Accessories</a></li>
+                    <li class="li-nav"><a href="">Collections</a></li>
                 </ul>
             </div>
             <div class="second-wrapper">
@@ -32,7 +42,7 @@
                 <button class="button-secondary">Samenkomen</button>
                 <button class="button-icon"><i class="icon fa-solid  fa-magnifying-glass"></i></button>
                 <button class="button-icon"> <i class="icon fa-solid fa-bag-shopping"></i></button>
-                <button class="button-icon"> <i class="icon fa-solid fa-bars"></i></button>
+                <button id="button-bars" class="button-icon"> <i class="icon fa-solid fa-bars"></i></button>
                 <button class="button-on-wide-screen"> <i class="icon fa-solid fa-bag-shopping"></i></button>
                 <button class="button-on-wide-screen"> <i class="fa-solid fa-user-astronaut"></i></i></button>
             </div>
